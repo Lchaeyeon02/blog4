@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+#root{
+  width: 1460px;
+  height: 1333px;
+  background-color: #f9f9f4;
+  /* background-color: #fff; */
+  box-sizing: border-box;
+  font-family: 'Pretendard-Regular';
+
+}
+
+/* ---------PostItem */
+.PIdateday{
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 13px;
+  text-align: center;
+}
+
+.PIdateyear{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.PIchatnum{
+  font-size: 20px;
+}
+
+.select-btn{
+  width: auto;
+  height: 48px;
+  background-color: #f9f9f4;
+  font-size: 20px;
+  color: #2a2c53;
+  border-radius: 50px;
+  border: solid 1px #2a2c53;
+  padding: 6px 50px 6px 32px;
+  appearance: none;
+  /* background-image: url("../public/category2.png");  */
+  transition: background-image 0.1s ease;
+  background-repeat: no-repeat;
+  background-size: 97%;
+}
+
+
+.select-btn option{
+  font-size: 14px;
+  background: #fff;
+}
+.select-btn2{
+  width: auto;
+  height: 48px;
+  background-color: #f9f9f4;
+  font-size: 20px;
+  color: #2a2c53;
+  border-radius: 50px;
+  border: solid 1px #2a2c53;
+  padding: 6px 52px 6px 32px;
+  appearance: none;
+  /* background-image: url("../public/category.png");  */
+  transition: background-image 0.1s ease;
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+
+
+.select-btn2 option{
+  font-size: 14px;
+  background: #fff;
+}
+
+.labelCss{
+  font-size: 24px;
+  color: #2a2c53;
+  font-weight: bold;
+}
+
+.cateB{
+  font-size: 20px;
+  color: #fff;
+  background-color: #ACD3A8;
+  padding: 4px 14px;
+  border-radius: 8px;
+}
