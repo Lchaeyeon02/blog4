@@ -55,7 +55,7 @@ function PostContainer(props){
     const deletePost = ()=>{
         db.collection('post').doc(postId).delete().then(()=>{
             alert('게시물이 삭제되었습니다.')
-            navigate('/main');
+            navigate('/');
         })
     }
 
@@ -77,7 +77,7 @@ function PostContainer(props){
         <StyledWrapper>
             <ButtonBox>
                 <StyledFlex>
-                    <a href=""> <img width="48px" height="48px" src="../public/back.png" alt=""  onClick={()=>{navigate(`/main`)}} /> </a>
+                    <a href=""> <img width="48px" height="48px" src="../public/back.png" alt=""  onClick={()=>{navigate(`/`)}} /> </a>
                     <StyledTitle>{post.title}</StyledTitle>
                     <b className='cateB'>{post.category}</b>
                 </StyledFlex>
