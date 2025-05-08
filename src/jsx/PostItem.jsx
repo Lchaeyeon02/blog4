@@ -93,7 +93,7 @@ function PostItem(props){
             <PIdatecate>
                 <b>{post.category}</b>
                 <PIchat>
-                    <img width={'30px'} height={'30px'} src={chatImg ? "/chat02.png" : "/chat01.png"} alt="" />
+                    <img width={'30px'} height={'30px'} src={chatImg ? "/blog4/chat02.png" : "/blog4/chat01.png"} alt="" />
                     <p className='PIchatnum'>{post.comments ? post.comments.length : 0}</p>
                 </PIchat>
             </PIdatecate>

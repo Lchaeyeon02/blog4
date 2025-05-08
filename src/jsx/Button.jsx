@@ -96,7 +96,7 @@ function Button(props){
     if(type == "create"){
         return <CreateButton onClick={props.onClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {props.title || "Button"}
-            <img src={createImg ? "/line-arrow-white.png" : "/line-arrow-black.png"} width={"24px"} height={"24px"} alt="" />
+            <img src={createImg ? "/blog4/line-arrow-white.png" : "/blog4/line-arrow-black.png"} width={"24px"} height={"24px"} alt="" />
         </CreateButton>
     }else if(type == "chat"){
         return <ChatButton onClick={props.onClick}>

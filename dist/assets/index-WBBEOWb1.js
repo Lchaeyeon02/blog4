@@ -4788,7 +4788,7 @@ This typically indicates that your device does not have a healthy Internet conne
 `,kF=Pe.p`
     font-size: 24px;
     color: #3E3F5B;
-`;function VF(n){const e=xv().id,{comment:t,onDeleteComment:r}=n,a=()=>{ko.collection("post").doc(e).get().then(o=>{const d=o.data().comments.filter(p=>p.id!==t.id);ko.collection("post").doc(e).update({comments:d}).then(()=>{alert("댓글이 삭제되었습니다."),r&&r(t.id)})})};return ie.jsxs(OF,{children:[ie.jsx(kF,{children:t.content}),ie.jsx("img",{onClick:a,width:"36px",height:"36px",src:"../public/x.png",alt:""})]})}const MF=Pe.div`
+`;function VF(n){const e=xv().id,{comment:t,onDeleteComment:r}=n,a=()=>{ko.collection("post").doc(e).get().then(o=>{const d=o.data().comments.filter(p=>p.id!==t.id);ko.collection("post").doc(e).update({comments:d}).then(()=>{alert("댓글이 삭제되었습니다."),r&&r(t.id)})})};return ie.jsxs(OF,{children:[ie.jsx(kF,{children:t.content}),ie.jsx("img",{onClick:a,width:"36px",height:"36px",src:"/blog4/x.png",alt:""})]})}const MF=Pe.div`
     display: block;
     width: 1300px;
     margin-bottom: 110px;
@@ -4819,7 +4819,7 @@ This typically indicates that your device does not have a healthy Internet conne
     font-size: 20px;
     margin: 40px 0 0 0;
 
-`;function qF(n){const{post:e}=n,{id:t}=xv(),r=lm(),a=()=>{ko.collection("post").doc(t).delete().then(()=>{alert("게시물이 삭제되었습니다."),r("/")})},o=u=>{let d=u;if(!d)return"날짜 정보 없음";const p=new Date(Number(d)),m=p.getFullYear(),y=String(p.getMonth()+1).padStart(2,"0"),v=String(p.getDate()).padStart(2,"0");return`${m}.${y}.${v}`};return ie.jsxs(MF,{children:[ie.jsxs(zF,{children:[ie.jsxs(BF,{children:[ie.jsxs("a",{href:"",children:[" ",ie.jsx("img",{width:"48px",height:"48px",src:"../public/back.png",alt:"",onClick:()=>{r("/")}})," "]}),ie.jsx(LF,{children:e.title}),ie.jsx("b",{className:"cateB",children:e.category})]}),ie.jsx(gm,{title:"Delete",type:"upload",onClick:u=>{a()}})]}),ie.jsxs(UF,{children:[e.content,ie.jsx(FF,{children:o(e.timestamp||e.createdAt||e.date)})]})]})}const jF=Pe.div`
+`;function qF(n){const{post:e}=n,{id:t}=xv(),r=lm(),a=()=>{ko.collection("post").doc(t).delete().then(()=>{alert("게시물이 삭제되었습니다."),r("/")})},o=u=>{let d=u;if(!d)return"날짜 정보 없음";const p=new Date(Number(d)),m=p.getFullYear(),y=String(p.getMonth()+1).padStart(2,"0"),v=String(p.getDate()).padStart(2,"0");return`${m}.${y}.${v}`};return ie.jsxs(MF,{children:[ie.jsxs(zF,{children:[ie.jsxs(BF,{children:[ie.jsxs("a",{href:"",children:[" ",ie.jsx("img",{width:"48px",height:"48px",src:"/blog4/back.png",alt:"",onClick:()=>{r("/")}})," "]}),ie.jsx(LF,{children:e.title}),ie.jsx("b",{className:"cateB",children:e.category})]}),ie.jsx(gm,{title:"Delete",type:"upload",onClick:u=>{a()}})]}),ie.jsxs(UF,{children:[e.content,ie.jsx(FF,{children:o(e.timestamp||e.createdAt||e.date)})]})]})}const jF=Pe.div`
     display: grid;
     gap: 20px;
 `,HF=Pe.div`
@@ -4877,12 +4877,12 @@ This typically indicates that your device does not have a healthy Internet conne
     gap: 16px;
     margin: 90px 0px 40px 0px;
 `,JF=Pe.select`
-    background-image: ${n=>n.isOpen?"url('../public/category2-c.png')":"url('../public/category2.png')"};
+    background-image: ${n=>n.isOpen?"url('/blog4/category2-c.png')":"url('/blog4/category2.png')"};
     background-size: 97%;
 
     cursor: pointer;
 `,e9=Pe.select`
-    background-image: ${n=>n.isOpen?"url('../public/category-c.png')":"url('../public/category.png')"};
+    background-image: ${n=>n.isOpen?"url('/blog4/category-c.png')":"url('/blog4/category.png')"};
     background-size: 110%;
 
     cursor: pointer;
@@ -4919,7 +4919,7 @@ This typically indicates that your device does not have a healthy Internet conne
     justify-content: space-between;
     margin-top: 117px;
     margin-bottom: 45px;
-`;function o9(n){const e=lm(),[t,r]=Y.useState(""),[a,o]=Y.useState(""),[u,d]=Y.useState(""),p=()=>{let y=new Date().getTime().toString();ko.collection("post").doc(y).set({id:y,title:t,content:a,comments:[],date:y,category:u}).then(()=>{alert("글이 등록되었습니다!"),e("/")})},m=y=>{d(y)};return ie.jsxs(i9,{children:[ie.jsx(ST,{}),ie.jsxs(a9,{children:[ie.jsxs("a",{href:"",children:[" ",ie.jsx("img",{width:"48px",height:"48px",src:"../public/back.png",alt:"",onClick:()=>{e("/")}})," "]}),ie.jsx(gm,{title:"Upload",type:"upload",onClick:y=>{p()}})]}),ie.jsxs(s9,{children:[ie.jsxs(xy,{children:[ie.jsx("label",{className:"labelCss",htmlFor:"",children:"category"}),ie.jsx(r9,{onChange:m})]}),ie.jsxs(xy,{children:[ie.jsx("label",{className:"labelCss",htmlFor:"",children:"title"}),ie.jsx(Fy,{height:"75",value:t,onChange:y=>r(y.target.value)})]}),ie.jsxs(xy,{children:[ie.jsx("label",{className:"labelCss",htmlFor:"",children:"content"}),ie.jsx(Fy,{height:"450",value:a,onChange:y=>o(y.target.value)})]})]})]})}const l9=Pe.div`
+`;function o9(n){const e=lm(),[t,r]=Y.useState(""),[a,o]=Y.useState(""),[u,d]=Y.useState(""),p=()=>{let y=new Date().getTime().toString();ko.collection("post").doc(y).set({id:y,title:t,content:a,comments:[],date:y,category:u}).then(()=>{alert("글이 등록되었습니다!"),e("/")})},m=y=>{d(y)};return ie.jsxs(i9,{children:[ie.jsx(ST,{}),ie.jsxs(a9,{children:[ie.jsxs("a",{href:"",children:[" ",ie.jsx("img",{width:"48px",height:"48px",src:"/blog4/back.png",alt:"",onClick:()=>{e("/")}})," "]}),ie.jsx(gm,{title:"Upload",type:"upload",onClick:y=>{p()}})]}),ie.jsxs(s9,{children:[ie.jsxs(xy,{children:[ie.jsx("label",{className:"labelCss",htmlFor:"",children:"category"}),ie.jsx(r9,{onChange:m})]}),ie.jsxs(xy,{children:[ie.jsx("label",{className:"labelCss",htmlFor:"",children:"title"}),ie.jsx(Fy,{height:"75",value:t,onChange:y=>r(y.target.value)})]}),ie.jsxs(xy,{children:[ie.jsx("label",{className:"labelCss",htmlFor:"",children:"content"}),ie.jsx(Fy,{height:"450",value:a,onChange:y=>o(y.target.value)})]})]})]})}const l9=Pe.div`
     display: grid;
     gap: 16px;
     margin-bottom: 32px;
@@ -4940,7 +4940,7 @@ This typically indicates that your device does not have a healthy Internet conne
 `;Pe.div`
     position : fixed;
     bottom : 0;
-`;function h9(n){const{comments:e,onCommentDeleted:t}=n,r=e.map((a,o)=>ie.jsx(VF,{comment:a,onDeleteComment:t},a.id));return ie.jsxs("div",{children:[ie.jsxs(c9,{children:[ie.jsx(fS,{children:"Comment"}),ie.jsxs(u9,{children:[ie.jsx("img",{width:"40px",height:"40px",src:"../public/green-chat.png",alt:""}),ie.jsx(fS,{children:e?e.length:0})]})]}),ie.jsx(l9,{children:r})]})}const d9=Pe.div`
+`;function h9(n){const{comments:e,onCommentDeleted:t}=n,r=e.map((a,o)=>ie.jsx(VF,{comment:a,onDeleteComment:t},a.id));return ie.jsxs("div",{children:[ie.jsxs(c9,{children:[ie.jsx(fS,{children:"Comment"}),ie.jsxs(u9,{children:[ie.jsx("img",{width:"40px",height:"40px",src:"/blog4/green-chat.png",alt:""}),ie.jsx(fS,{children:e?e.length:0})]})]}),ie.jsx(l9,{children:r})]})}const d9=Pe.div`
     display: flex;
     gap: 18px
     height: 75px;
