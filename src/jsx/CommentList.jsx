@@ -44,7 +44,7 @@ function CommentList(props){
             <DivFlex2>
                 <StyledTItle>Comment</StyledTItle>
                 <DivFlex>
-                    <img width="40px" height="40px" src="../public/green-chat.png" alt=""/>
+                    <img width="40px" height="40px" src="/blog4/green-chat.png" alt=""/>
                     <StyledTItle>
                         {comments ? comments.length : 0}
                     </StyledTItle>

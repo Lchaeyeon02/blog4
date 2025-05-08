@@ -38,14 +38,14 @@ const MainOption = styled.div`
 `
 
 const CustomSelect = styled.select`
-    background-image: ${props => props.isOpen ? "url('../public/category2-c.png')" : "url('../public/category2.png')"};
+    background-image: ${props => props.isOpen ? "url('/blog4/category2-c.png')" : "url('/blog4/category2.png')"};
     background-size: 97%;
 
     cursor: pointer;
 `
 
 const CustomCategorySelect = styled.select`
-    background-image: ${props => props.isOpen ? "url('../public/category-c.png')" : "url('../public/category.png')"};
+    background-image: ${props => props.isOpen ? "url('/blog4/category-c.png')" : "url('/blog4/category.png')"};
     background-size: 110%;
 
     cursor: pointer;

@@ -57,7 +57,7 @@ function PostWritePage(props){
         <MainDiv>
             <MainHeader/>
             <ButtonBox>
-                <a href=""> <img width="48px" height="48px" src="../public/back.png" alt=""  onClick={()=>{navigate(`/`)}} /> </a>
+                <a href=""> <img width="48px" height="48px" src="/blog4/back.png" alt=""  onClick={()=>{navigate(`/`)}} /> </a>
                 <Button title="Upload" type = "upload" onClick={(e)=>{writePost()}}></Button>
             </ButtonBox>
 

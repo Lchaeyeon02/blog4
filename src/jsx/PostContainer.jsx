@@ -77,7 +77,7 @@ function PostContainer(props){
         <StyledWrapper>
             <ButtonBox>
                 <StyledFlex>
-                    <a href=""> <img width="48px" height="48px" src="../public/back.png" alt=""  onClick={()=>{navigate(`/`)}} /> </a>
+                    <a href=""> <img width="48px" height="48px" src="/blog4/back.png" alt=""  onClick={()=>{navigate(`/`)}} /> </a>
                     <StyledTitle>{post.title}</StyledTitle>
                     <b className='cateB'>{post.category}</b>
                 </StyledFlex>

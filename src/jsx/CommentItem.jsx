@@ -48,7 +48,7 @@ function CommentItem(props){
     return (
         <StyledWrapper>
             <StyledContent>{comment.content}</StyledContent>
-            <img onClick={deleteComment} width={"36px"} height={"36px"} src="../public/x.png" alt="" />
+            <img onClick={deleteComment} width={"36px"} height={"36px"} src="/blog4/x.png" alt="" />
         </StyledWrapper>
     )
 }
