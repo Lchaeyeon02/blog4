@@ -111,7 +111,7 @@ Please change the parent <Route path="${G}"> to <Route path="${G==="/"?"*":`${G}
     &:hover{
         background-color: #8ab2a6;
     }
-`;function gm(n){const[e,t]=Y.useState(!1),r=()=>{t(!0)},a=()=>{t(!1)},o=n.type||"create";if(o=="create")return ie.jsxs(tR,{onClick:n.onClick,onMouseEnter:r,onMouseLeave:a,children:[n.title||"Button",ie.jsx("img",{src:e?"/line-arrow-white.png":"/line-arrow-black.png",width:"24px",height:"24px",alt:""})]});if(o=="chat")return ie.jsx(fk,{onClick:n.onClick,children:n.title||"Button"});if(o=="upload")return ie.jsx(dk,{onClick:n.onClick,children:n.title||"Button"})}const pk=Pe.textarea`
+`;function gm(n){const[e,t]=Y.useState(!1),r=()=>{t(!0)},a=()=>{t(!1)},o=n.type||"create";if(o=="create")return ie.jsxs(tR,{onClick:n.onClick,onMouseEnter:r,onMouseLeave:a,children:[n.title||"Button",ie.jsx("img",{src:e?"/blog4/line-arrow-white.png":"/blog4/line-arrow-black.png",width:"24px",height:"24px",alt:""})]});if(o=="chat")return ie.jsx(fk,{onClick:n.onClick,children:n.title||"Button"});if(o=="upload")return ie.jsx(dk,{onClick:n.onClick,children:n.title||"Button"})}const pk=Pe.textarea`
     background-color: white;
     width: 1220px;
     height: ${n=>n.height}px;
@@ -172,7 +172,7 @@ Please change the parent <Route path="${G}"> to <Route path="${G==="/"?"*":`${G}
     display: flex;
     align-items: center;
     gap: 6px;
-`;function Tk(n){const{post:e,onClick:t}=n,a=(m=>{if(!m)return{day:"N/A",yearMonth:"N/A"};const y=new Date(parseInt(m)),v=y.getDate().toString().padStart(2,"0"),w=y.getFullYear().toString().slice(-2),S=(y.getMonth()+1).toString().padStart(2,"0");return{day:v,yearMonth:`${w}/${S}`}})(e.date),[o,u]=Y.useState(!0),d=()=>{u(!1)},p=()=>{u(!0)};return ie.jsxs(mk,{onClick:t,onMouseEnter:d,onMouseLeave:p,children:[ie.jsxs(gk,{children:[ie.jsxs(yk,{children:[ie.jsx("p",{className:"PIdateday",children:a.day}),ie.jsx("p",{className:"PIdateyear",children:a.yearMonth})]}),ie.jsx(_k,{children:e.title})]}),ie.jsxs(vk,{children:[ie.jsx("b",{children:e.category}),ie.jsxs(Ek,{children:[ie.jsx("img",{width:"30px",height:"30px",src:o?"/chat02.png":"/chat01.png",alt:""}),ie.jsx("p",{className:"PIchatnum",children:e.comments?e.comments.length:0})]})]})]})}const wk=()=>{};var sI={};/**
+`;function Tk(n){const{post:e,onClick:t}=n,a=(m=>{if(!m)return{day:"N/A",yearMonth:"N/A"};const y=new Date(parseInt(m)),v=y.getDate().toString().padStart(2,"0"),w=y.getFullYear().toString().slice(-2),S=(y.getMonth()+1).toString().padStart(2,"0");return{day:v,yearMonth:`${w}/${S}`}})(e.date),[o,u]=Y.useState(!0),d=()=>{u(!1)},p=()=>{u(!0)};return ie.jsxs(mk,{onClick:t,onMouseEnter:d,onMouseLeave:p,children:[ie.jsxs(gk,{children:[ie.jsxs(yk,{children:[ie.jsx("p",{className:"PIdateday",children:a.day}),ie.jsx("p",{className:"PIdateyear",children:a.yearMonth})]}),ie.jsx(_k,{children:e.title})]}),ie.jsxs(vk,{children:[ie.jsx("b",{children:e.category}),ie.jsxs(Ek,{children:[ie.jsx("img",{width:"30px",height:"30px",src:o?"/blog4/chat02.png":"/blog4/chat01.png",alt:""}),ie.jsx("p",{className:"PIchatnum",children:e.comments?e.comments.length:0})]})]})]})}const wk=()=>{};var sI={};/**
  * @license
  * Copyright 2017 Google LLC
  *
